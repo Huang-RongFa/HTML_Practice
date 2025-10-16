@@ -1,0 +1,230 @@
+:root {
+    --linearGradient-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --white-color: #ffffff;
+    --section-color: #14141d;
+    --p-color: #cfcfd0;
+    --content-color: #1c1b2b;
+    --border-color: #343344;
+    --message-color: #232331;
+    --input-color: #1b1b24;
+}
+
+/* 整體預設 & 跨區共用 ======================================== */
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--section-color);
+}
+
+p {
+    color: var(--p-color);
+}
+
+h2 {
+    background: var(--linearGradient-background);
+    background-clip: text;
+    /* 標準語法 */
+    -webkit-background-clip: text;
+    /* 讓 Safari / Chrome 支援 */
+    color: transparent;
+    /* 標準方式 */
+    -webkit-text-fill-color: transparent;
+    /* Safari / Chrome 專用 */
+    font-weight: bold;
+}
+
+/* header area ======================================== */
+.navbar .logo {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-brand {
+    font-size: 28px;
+}
+
+.navbar .logo svg {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar i {
+    font-size: 16px;
+}
+
+.navbar a{
+    color: var(--white-color);
+}
+
+.navbar-toggler i {
+    font-size: 40px;
+}
+
+/* sec1 area ======================================== */
+
+/* sec2 area ======================================== */
+#sec2 .svg-border {
+    width: 125px;
+    height: 85px;
+    background: var(--linearGradient-background);
+
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec2 .svg-border svg {
+    width: 70%;
+    height: 70%;
+}
+
+#sec2 .intro {
+    position: relative;
+    width: 350px;
+    background-color: var(--content-color);
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+}
+
+.corner-decoration {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgba(102, 126, 234, 0.3);
+}
+
+.corner-decoration.top-left {
+    top: -20px;
+    left: -20px;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 20px 0 0 0;
+}
+
+.corner-decoration.bottom-right {
+    bottom: -20px;
+    right: -20px;
+    border-left: none;
+    border-top: none;
+    border-radius: 0 0 20px 0;
+}
+
+#sec2 .content p {
+    font-size: 16px;
+    line-height: 2rem;
+}
+
+#sec2 .content a {
+    background: var(--linearGradient-background);
+}
+
+#sec2 .content-list li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: var(--p-color);
+    padding: .5rem;
+}
+
+#sec2 .content-list li::before {
+    content: '✓';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 15px;
+    margin-left: -40px;
+}
+
+#sec2 .stats-section {
+    background-color: var(--content-color);
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+}
+
+
+
+
+/* sec3 area ======================================== */
+#sec3 .intro p {
+    line-height: 2rem;
+}
+
+#sec3 .messagebox {
+    background-color: var(--message-color);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+}
+
+#sec3 .messagebox .icon {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+#sec3 .messagebox .icon i {
+    font-size: 24px;
+}
+
+#sec3 .follow-btn a {
+    font-size: 20px;
+    color: var(--white-color);
+    border: 1.5px solid var(--border-color);
+}
+
+#sec3 .follow-btn a:hover {
+    color: var(--white-color);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+#sec3 .contact {
+    background-color: var(--content-color);
+    border: 1.5px solid var(--border-color);
+    border-radius: 20px;
+}
+
+#sec3 .contact strong {
+    color: var(--white-color);
+}
+
+#sec3 .contact input,
+#sec3 .contact textarea {
+    background-color: var(--message-color);
+    border: 1.5px solid var(--border-color);
+    border-radius: .5rem;
+    min-height: 3rem;
+}
+
+#sec3 .contact textarea{
+    height: 8rem;
+}
+
+#sec3 .contact a{
+    color: var(--white-color);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+
+
+/* sec4 area ======================================== */

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- 左邊 Logo -->
+            <div class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="10" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(-15 17.5 50)" />
+                    <rect x="35" y="15" width="15" height="70" fill="url(#grad1)" />
+                    <rect x="60" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(15 67.5 50)" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.5" />
+                </svg>
+            </div>
+            <a class="navbar-brand ms-3" href="#">3D Coverflow</a>
+            <!-- 手機版漢堡按鈕 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="bi bi-list"></i>
+            </button>
+            <!-- 導覽內容區 -->
+            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/" target="_blank"><i
+                                class="bi bi-arrow-up-right me-2"></i>GitHub</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="sec1"></section>
+        <section id="sec2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center pb-5">
+                        <h2>Discover 3D Coverflow</h2>
+                        <p>A revolutionary way to showcase your visual content with stunning 3D effects and seamless
+                            interactions</p>
+                    </div>
+                    <div class="col-12 col-lg-6 mt-5">
+                        <div class="intro d-flex flex-column align-items-center mx-auto">
+                            <div class="corner-decoration top-left"></div>
+                            <div class="corner-decoration bottom-right"></div>
+                            <div class="svg-border m-4">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <rect x="10" y="25" width="15" height="50" fill="#fff"
+                                        transform="rotate(-15 17.5 50)" />
+                                    <rect x="35" y="15" width="15" height="70" fill="#fff" />
+                                    <rect x="60" y="25" width="15" height="50" fill="#fff"
+                                        transform="rotate(15 67.5 50)" />
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="#fff" stroke-width="2"
+                                        opacity="0.5" />
+                                </svg>
+                            </div>
+                            <div class="text-center">
+                                <h2>3D Coverflow</h2>
+                                <p class="m-3">Transform your image galleries into immersive 3D experiences</p>
+                            </div>
+                            <div class="m-3 d-flex flex-wrap justify-content-center">
+                                <a class="rounded-pill btn btn-outline-secondary m-2" href="#">HTML5</a>
+                                <a class="rounded-pill btn btn-outline-secondary m-2" href="#">CSS3</a>
+                                <a class="rounded-pill btn btn-outline-secondary m-2" href="#">JavaScript</a>
+                                <a class="rounded-pill btn btn-outline-secondary m-2" href="#">Responsive</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                        <div class="content m-5 m-lg-3">
+                            <h2>Elevate Your Gallery Experience</h2>
+                            <p>3D Coverflow is brought to you by TemplateMo. Transform the way you present images with
+                                our
+                                cutting-edge 3D coverflow technology. Create immersive, interactive galleries that
+                                captivate
+                                your audience and leave a lasting impression.</p>
+                            <p>Whether you're showcasing portfolio pieces, product images, or creating an interactive
+                                story,
+                                our 3D coverflow brings your content to life with fluid animations and intuitive
+                                controls.
+                            </p>
+                            <ul class="content-list">
+                                <li>Smooth 3D transitions with hardware acceleration</li>
+                                <li>Touch-enabled navigation for mobile devices</li>
+                                <li>Customizable autoplay and timing controls</li>
+                                <li>Keyboard navigation support</li>
+                                <li>Reflection effects for added depth</li>
+                            </ul>
+                            <div class="text-lg-start text-center">
+                                <a class="rounded-pill btn btn-outline-secondary text-light fw-bold px-3 py-2"
+                                    href="">Start Your Project<i class="bi bi-arrow-right ps-2"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row text-center stats-section mt-5">
+                        <div class="col-lg-3 col-6 my-4">
+                            <h2>60fps</h2>
+                            <p>Smooth Performance</p>
+                        </div>
+                        <div class="col-lg-3 col-6 my-4">
+                            <h2>100%</h2>
+                            <p>Responsive Design</p>
+                        </div>
+                        <div class="col-lg-3 col-6 my-4">
+                            <h2>3D</h2>
+                            <p>Visual Effects</p>
+                        </div>
+                        <div class="col-lg-3 col-6 my-4">
+                            <h2>∞</h2>
+                            <p>Customization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sec3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column justify-content-center align-items-center mb-5">
+                        <h2>Get In Touch</h2>
+                        <p>Have a project in mind? Let's create something amazing together.</p>
+                    </div>
+                    <div class="col-12 col-lg-5 mx-auto">
+                        <div class="intro">
+                            <h2>Let's Connect</h2>
+                            <p>We're here to help bring your vision to life. Whether you need a stunning gallery, a
+                                complete
+                                website redesign, or custom development work, we'd love to hear from you</p>
+                        </div>
+                        <div class="messagebox d-flex justify-content-start align-items-center my-4">
+                            <div class="icon m-3 d-flex justify-content-center align-items-center">
+                                <i class="bi bi-envelope-fill text-light m-3 p-3"></i>
+                            </div>
+                            <div class="message my-3 d-flex flex-column">
+                                <strong class="text-light">Email</strong>
+                                <small class="text-light">hello@3dcoverflow.com</small>
+                            </div>
+                        </div>
+                        <div class="messagebox d-flex justify-content-start align-items-center my-4">
+                            <div class="icon m-3 d-flex justify-content-center align-items-center">
+                                <i class="bi bi-telephone-fill text-light m-3 p-3"></i>
+                            </div>
+                            <div class="message my-3 d-flex flex-column">
+                                <strong class="text-light">Phone</strong>
+                                <small class="text-light">+1 (555) 123-4567</small>
+                            </div>
+                        </div>
+                        <div class="messagebox d-flex justify-content-start align-items-center my-4">
+                            <div class="icon m-3 d-flex justify-content-center align-items-center">
+                                <i class="bi bi-geo-alt-fill text-light text-center"></i>
+                            </div>
+                            <div class="message my-3 d-flex flex-column">
+                                <strong class="text-light">Address</strong>
+                                <small class="text-light">123 Design Street, San Francisco, CA 94102</small>
+                            </div>
+                        </div>
+                        <div class="messagebox d-flex justify-content-start align-items-center my-4">
+                            <div class="icon m-3 d-flex justify-content-center align-items-center">
+                                <i class="bi bi-check-circle-fill text-light m-3 p-3"></i>
+                            </div>
+                            <div class="message my-3 d-flex flex-column">
+                                <strong class="text-light">Business Hours</strong>
+                                <small class="text-light">Monday - Friday: 9:00 AM - 6:00 PM PST</small>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="text-light fw-bold mb-3">Follow Us</h5>
+                            <div class="follow-btn">
+                                <a class="btn btn-outline-light rounded-circle me-3" href="#"><i
+                                        class="bi bi-facebook"></i></a>
+                                <a class="btn rounded-circle me-3" href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a class="btn rounded-circle me-3" href="#"><i class="bi bi-linkedin"></i></a>
+                                <a class="btn rounded-circle me-3" href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="contact d-flex flex-column p-4">
+                            <strong class="py-3">Your Name</strong>
+                            <input type="text" name="name" id="name">
+                            <strong class="py-3">Email Address</strong>
+                            <input type="email" name="email" id="email">
+                            <strong class="py-3">Subject</strong>
+                            <input type="text" name="subject" id="subject">
+                            <strong class="py-3">Message</strong>
+                            <textarea name="message" id="message"></textarea>
+                            <a class="mt-4 btn rounded-pill fw-bolder" href="">Send Message</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
