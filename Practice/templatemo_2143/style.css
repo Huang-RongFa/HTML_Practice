@@ -1,0 +1,382 @@
+/* root 設定 */
+:root {
+    --primary: #2D5A87;
+    --secondary: #4A7C8A;
+    --accent: #6B9B7A;
+    --light: #F7F7F7;
+    --dark: #2A2A3E;
+    --white: #ffffff;
+    --gradient-1: linear-gradient(135deg, #2D5A87 0%, #4A7C8A 100%);
+    --gradient-2: linear-gradient(135deg, #F1E5AC 0%, #4a90e2 100%);
+}
+
+
+/* 初始化html網頁CSS環境 */
+* {
+    margin: 0;
+}
+
+
+html {
+    font-size: 16px;
+}
+
+
+body {
+    margin: 0;
+}
+
+
+section {
+    background-color: var(--light);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* header */
+.navbar {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 1044;
+}
+
+.navbar .logo {
+    max-width: 40px;
+    max-height: 40px;
+    flex-shrink: 0;
+}
+
+.navbar .logo svg {
+    width: 100%;
+    max-height: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--dark);
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        position: absolute;
+    }
+
+    @keyframes aniScrollDown {
+        0% {
+            transform: translateY(-200%);
+        }
+
+        /* 100% { 不偏移 } */
+    }
+
+    .navbar.anifixed {
+        animation: aniScrollDown 1s cubic-bezier(0.8, 0, 0.25, 1);
+        position: fixed;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link {
+        color: white;
+        background: linear-gradient(135deg, #4a90e2 0%, #F1E5AC 100%);
+        border-color: #4a90e2;
+        border-radius: .5rem;
+    }
+
+
+}
+
+
+
+/* Section1 */
+#sec1 {
+    background: var(--gradient-2);
+}
+
+#sec1 h1 {
+    font-size: 40px;
+}
+
+#sec1 p {
+    font-size: 18px;
+}
+
+#sec1 a {
+    color: var(--primary);
+}
+
+@media (min-width: 768px) {
+    #sec1 h1 {
+        font-size: 48px;
+    }
+
+    #sec1 p {
+        font-size: 20px;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+    #sec1 h1 {
+        font-size: 54px;
+    }
+
+    #sec1 p {
+        font-size: 22px;
+    }
+
+}
+
+/* Section2 */
+#sec2 .intro-card {
+    background-color: var(--white);
+    border-radius: 32px;
+    height: 275px;
+    padding: 40px;
+}
+
+#sec2 .intro-icon {
+    font-size: 50px;
+}
+
+#sec2 .intro-about {
+    background: var(--gradient-2);
+    border-radius: 20px;
+}
+
+#sec2 .feature-showcase {
+    background-color: #edeff1;
+    /* height: 100px; */
+    border-radius: 20px;
+}
+
+#sec2 .feature-showcase h2 {
+    margin: 2.5rem 0;
+    background: var(--gradient-2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* 讓 Chrome / Safari 也支援 */
+    color: transparent;
+    /* 隱藏原本文字顏色 */
+    -webkit-text-fill-color: transparent;
+    /* 補強兼容性 */
+}
+
+#sec2 .showcase {
+    background-color: var(--white);
+    min-height: 75px;
+    border-radius: 18px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#sec2 .showcase i {
+    margin-right: 1rem;
+    margin-left: .5rem;
+    font-size: 24px;
+    background: var(--gradient-2);
+    color: var(--white);
+    min-width: 30px;
+    min-height: 30px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec2 .showcase p {
+    margin: 0;
+    /* 移除預設外距 */
+    line-height: 1.5rem;
+    /* 防止文字基線偏高 */
+}
+
+@media (min-width: 768px) {
+    #sec2 .intro-card {
+        height: 350px;
+    }
+
+}
+
+/* Section3 */
+#sec3 {
+    background-color: #f0f3f4;
+}
+
+#sec3 .practice-card {
+    position: relative;
+    background-color: var(--white);
+    margin-bottom: 1.5rem;
+    padding: 2.5rem;
+    min-height: 300px;
+    border-radius: 28px;
+    overflow: hidden;
+    /* 讓圓角生效 */
+}
+
+#sec3 .practice-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--primary);
+}
+
+#sec3 .practice-icon {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: var(--gradient-2);
+}
+
+#sec3 .practice-btn a {
+    background-color: #ecf1f3;
+    color: var(--primary);
+    outline: none;
+    font-size: 12px;
+}
+
+/* 左側容器：垂直時間軸 */
+.practice-nav {
+    position: relative;
+    justify-content: space-between;
+    /* 平均分配按鈕間距，使其與右側卡片對齊 */
+    padding: 2rem 0;
+}
+
+.practice-nav::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 50%;
+    width: 2px;
+    background-color: var(--primary);
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* 按鈕壓在線上 */
+.practice-nav .btn {
+    position: relative;
+    z-index: 1;
+    background-color: var(--white);
+    /* border: .5px solid var(--primary); */
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+    padding: .75rem 2rem;
+    font-weight: bold;
+}
+
+/* Section4 */
+#sec4 .nav button.active,
+#sec4 .nav button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: bold;
+}
+
+#sec4 .nav button {
+    background-color: var(--white);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    font-weight: bold;
+}
+
+
+#sec4 .intro-card {
+    background-color: var(--white);
+    border-radius: 16px;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+#sec4 .intro-card img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#sec4 .intro-card strong {
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .25rem;
+}
+
+#sec4 .intro-card p {
+    line-height: 1.5rem;
+}
+
+/* Section5 */
+#sec5 {
+    background: linear-gradient(135deg, #87ceeb 0%, #ffb6c1 100%);
+}
+
+#sec5 .contact-us {
+    background-color: var(--white);
+    border-radius: 32px;
+}
+
+#sec5 .contact-info {
+    border-radius: 18px;
+    margin: 1.5rem 0;
+    min-height: 120px;
+}
+
+#sec5 .contact-info p {
+    overflow-wrap: anywhere;
+}
+
+#sec5 .contact-info:hover {
+    background: linear-gradient(135deg, rgba(45, 90, 135, 0.05) 0%, rgba(74, 124, 138, 0.05) 100%);
+}
+
+#sec5 .info-icon {
+    min-width: 50px;
+    min-height: 50px;
+    font-size: 20px;
+    background: var(--gradient-2);
+}
+
+#sec5 .form-group input,
+#sec5 .form-group textarea {
+    border: 2.5px solid rgb(221, 221, 221);
+    border-radius: .5rem;
+    height: 3.5rem;
+    padding: .5rem;
+    margin: 1.25rem 0;
+}
+
+#sec5 .form-group textarea {
+    height: 6.5rem;
+}
+
+#sec5 button {
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: bold;
+    border: none;
+}
+
+/* footer */
+.footer-content {
+    background-color: var(--dark);
+    color: var(--white);
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-links a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-links a:hover{
+    color: var(--accent);
+}
